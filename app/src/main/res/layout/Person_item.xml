@@ -1,55 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/materialCardView"
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="80dp" >
 
-
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="30dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="23dp"
+            tools:layout_editor_absoluteY="33dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
 
             <TextView
-                android:id="@+id/textView2"
-                android:layout_width="187dp"
-                android:layout_height="40dp"
-                android:text="MAD_JSON_Practical"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:id="@+id/textView_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:text="Surekha"/>
+
+            <TextView
+                android:id="@+id/textView_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="17dp"
+                android:text="+91 9537309646"/>
+
+            <TextView
+                android:id="@+id/textView_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="32dp"
+                android:text="mahi004@gmail.com"/>
+
+            <TextView
+                android:id="@+id/textView_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="48dp"
+                android:text="Kaprada-396065"/>
+
+
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/materialButton"
-                android:layout_width="85dp"
-                android:layout_height="85dp"
+                android:id="@+id/button"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
                 app:icon="@drawable/baseline_person_24"
                 app:iconSize="30dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView2"></com.google.android.material.button.MaterialButton>
+                app:iconGravity="start"/>
+
 
             <com.google.android.material.button.MaterialButton
-                android:layout_width="85dp"
-                android:layout_height="85dp"
-                android:layout_marginStart="224dp"
-                android:layout_marginTop="40dp"
+                android:id="@+id/button2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="280dp"
+                android:layout_marginTop="8dp"
                 app:icon="@drawable/baseline_location_on_24"
                 app:iconSize="30dp"
-                app:layout_constraintStart_toEndOf="@+id/materialButton"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:iconGravity="start"/>
 
 
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </com.google.android.material.card.MaterialCardView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
