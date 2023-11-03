@@ -1,5 +1,4 @@
 package com.example.mad_practical_10_22172012003
-
 import android.util.Log
 import java.io.*
 import java.net.HttpURLConnection
@@ -32,8 +31,8 @@ class HttpRequest {
         return response
     }
 
-    private fun convertStreamToString(`is`: InputStream): String {
-        val reader = BufferedReader(InputStreamReader(`is`))
+    private fun convertStreamToString(iss : InputStream): String {
+        val reader = BufferedReader(InputStreamReader(iss))
         val sb = StringBuilder()
         var line: String?
         try {
@@ -44,7 +43,7 @@ class HttpRequest {
             e.printStackTrace()
         } finally {
             try {
-                `is`.close()
+                iss.close()
             } catch (e: IOException) {
                 e.printStackTrace()
             }

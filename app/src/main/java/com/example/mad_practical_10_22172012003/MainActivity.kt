@@ -1,6 +1,4 @@
 package com.example.mad_practical_10_22172012003
-
-import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -17,7 +15,6 @@ import org.json.JSONObject
 class MainActivity : AppCompatActivity() {
 
     private lateinit var personListView : ListView
-    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
